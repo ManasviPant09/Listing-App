@@ -39,7 +39,7 @@ const Cart = () => {
           <p style={{width: "150px"}}>Toppings -</p>
           {Array.isArray(toppings) ? (
           <p style={{marginLeft: "10px"}}>{toppings.join(", ")}</p>) : (
-          <p style={{marginLeft: "10px"}}>{toppings}</p>)}
+          <p style={{marginLeft: "-45px"}}>{toppings}</p>)}
         </div>
         <div style={{display: "flex"}}>
           <p>Quantity - </p>
