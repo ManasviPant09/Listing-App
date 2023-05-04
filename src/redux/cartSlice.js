@@ -23,7 +23,7 @@ const cartSlice = createSlice({
       state.toppings = action.payload;
     },
     updateQuantity : (state,action) =>{
-        state.quantity += 1;
+        state.quantity = action.payload;
     }
   },
 });
