@@ -53,7 +53,6 @@ const Menu = () => {
   },[sortPrice, vegPizzas, nonVegPizzas]);
 
   const handleSortPrice = (sortOption) => {
-    console.log(sortOption);
     setSortPrice(sortOption);
   };
 
@@ -70,7 +69,6 @@ const Menu = () => {
   },[sortRating, vegPizzas, nonVegPizzas]);
 
   const handleSortRating = (sortOption) => {
-    console.log(sortOption);
     setSortRating(sortOption);
   };
 
