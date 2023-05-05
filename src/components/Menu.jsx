@@ -50,7 +50,7 @@ const Menu = () => {
         prevPizza.slice().sort((a, b) => b.price - a.price)
       );
     }
-  },[sortPrice]);
+  },[sortPrice, vegPizzas, nonVegPizzas]);
 
   const handleSortPrice = (sortOption) => {
     console.log(sortOption);
@@ -67,7 +67,7 @@ const Menu = () => {
         prevPizza.slice().sort((a, b) => b.rating - a.rating)
       );
     }
-  },[sortRating]);
+  },[sortRating, vegPizzas, nonVegPizzas]);
 
   const handleSortRating = (sortOption) => {
     console.log(sortOption);
@@ -91,7 +91,7 @@ const Menu = () => {
         </Row>
         <Row xs={3} md={2} lg={6} style={{marginTop: "40px", marginLeft: "0px", display:"flex",justifyContent: "space-between"}}>
           <Col><Price handleSortPrice={handleSortPrice} /></Col>
-          <Col><Rating handleSortRating={handleSortRating} /></Col>
+          <Col style={{marginRight: "0px"}}><Rating handleSortRating={handleSortRating} /></Col>
         </Row>
         <Row xs={1} md={3} lg={4} style={{marginTop: "40px",display:"flex", flexDirection: "row", alignItems:"center",marginLeft: "2px"}}>
         {type === "veg"
